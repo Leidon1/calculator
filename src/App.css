@@ -1,0 +1,151 @@
+:root {
+  --light-gray: #D3D3D3;
+  --dark-gray: #6c6c6c;
+  --white: #ffffff;
+  --black: #1e1e1e;
+  --dark-orange: #6B4000;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+}
+
+#calculator {
+  display: grid;
+  grid-template-areas: 
+  "display display display display"
+  "clear negative percentage divide"
+  "seven eight nine multiply"
+  "four five six subtract"
+  "one two three add"
+  "zero zero decimal equals";
+  grid-template-columns: 75px 75px 75px 75px;
+  gap: 10px;
+  padding: 50px;
+  padding-top: 10px;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: var(--black);
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+  color: #ffffff;
+}
+
+.dark-orange {
+  background-color: var(--dark-orange);
+  color: #ffffff;
+}
+button {
+  height: 75px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 100%;
+  transition: transform 0.1s ease-in-out;
+}
+button:active {
+  transform: scale(0.95);
+}
+#answer {
+  font-size: 48px;
+  height: 48px;
+}
+
+#expression {
+font-size: 30px;
+height: 30px;
+color: var(--dark-gray);
+}
+
+#display {
+  grid-area: display;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#negative {
+  grid-area: negative;
+}
+
+#percentage {
+  grid-area: percentage;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#add {
+  grid-area: add;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#equals {
+  grid-area: equals;
+}
